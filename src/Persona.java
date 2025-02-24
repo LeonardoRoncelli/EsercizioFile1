@@ -1,7 +1,7 @@
 public class Persona {
     private int indice;
     private String id, nome, cognome, compagnia, citta, nazione, telefono1, telefono2, email, dataIscrizione, sito;
-    public Persona(String id, String nome,String cognome, String compagnia,String citta,String nazione,String telefono1,String telefono2,String email,String dataIscrizione,String sito){
+    public Persona(){
         this.id=id;
         this.nome=nome;
         this.cognome=cognome;
@@ -14,6 +14,10 @@ public class Persona {
         this.dataIscrizione=dataIscrizione;
         this.sito=sito;
     }
+
+    public Persona(int i, String nome, String cognome, String compagnia, String citta, String nazione, String telefono1, String telefono2, String email, String dataIscrizione, String sito) {
+    }
+
     public int getIndice() {
         return indice;
     }
@@ -85,5 +89,23 @@ public class Persona {
     }
     public void setSito(String sito) {
         this.sito = sito;
+    }
+    public String toString() {
+        return "Customer{" +
+                "index=" + indice +
+                ", cId='" + id + '\'' +
+                ", nome='" + nome + '\'' +
+                ", cognome='" + cognome + '\'' +
+                ", company='" + compagnia + '\'' +
+                ", citta='" + citta + '\'' +
+                ", phone1='" + telefono1 + '\'' +
+                ", phone2='" + telefono1 + '\'' +
+                ", email='" + email + '\'' +
+                ", dataSub='" + dataIscrizione + '\'' +
+                ", website='" + sito + '\'' +
+                '}';
+    }
+
+    public void add(Persona persona) {
     }
 }
